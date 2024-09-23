@@ -7,6 +7,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 4000,
-    //origin: 'http://0.0.0.0:4000',
   }
 })
