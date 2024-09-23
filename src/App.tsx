@@ -2,20 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import db from './db'
+import {getUsersOver} from './main.tsx'
 
 function App() {
   const [count, setCount] = useState(0);
-  async function getUsersOver() {
-      const test = await db`
-      select
-          name,
-          age
-       from test_table
-      `
-        // users = Result [{ name: "Walter", age: 80 }, { name: 'Murray', age: 68 }, ...]
-      return test
-    }
 
   return (
     <>
