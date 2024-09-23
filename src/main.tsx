@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import pg   from 'pg'
+import * as pg from 'pg'
 //import { native as pg } from 'pg';
 import App from './App.tsx'
 import './index.css'
