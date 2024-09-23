@@ -2,9 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import db from './db'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  async function getUsersOver() {
+      const test = await db`
+      select
+          name,
+          age
+       from test_table
+      `
+        // users = Result [{ name: "Walter", age: 80 }, { name: 'Murray', age: 68 }, ...]
+      return test
+    }
 
   return (
     <>
@@ -28,6 +39,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+        {getUsersOver()}
     </>
   )
 }
