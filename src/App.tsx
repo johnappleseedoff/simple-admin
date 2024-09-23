@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {getUsersOver} from './main.tsx'
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0);
 
   return (
@@ -29,9 +29,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-        {getUsersOver()}
+        {getUsersOver}
     </>
   )
 }
-
-export default App
