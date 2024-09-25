@@ -11,9 +11,9 @@ function App() {
   const fetchTest = async () => {
       const response = await axios.get("http://localhost:3000/test");
       setArray(response.data.r);
-      console.log(response.data.r[1]);
+      console.log(response.data.r);
   };
-  useEffect(() => {
+useEffect(() => {
       fetchTest();
   }, []);
 
@@ -37,7 +37,7 @@ function App() {
         </p>
       </div>
         {
-            array
+            array[0]
         }
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
