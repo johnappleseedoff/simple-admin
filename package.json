@@ -5,7 +5,7 @@
   "scripts": {
     "s_dev": "cd ./server && dev",
     "c_dev": "cd ./client && dev",
-    "dev": "run @s_dev && @c_dev"
+    "dev": "s_dev && c_dev"
   },
   "dependencies": {},
   "devDependencies": {}
