@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "s_dev": "cd ./server && run dev",
-    "c_dev": "cd ./client && run dev",
-    "dev": "run @s_dev && @c_devt"
+    "s_dev": "cd ./server && dev",
+    "c_dev": "cd ./client && dev",
+    "dev": "run @s_dev && @c_dev"
   },
   "dependencies": {},
   "devDependencies": {}
