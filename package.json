@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "s_dev": "cd ./server && npm install && npm run dev",
+    "s_dev": "cd ./server && npm install && npm run start",
     "c_dev": "cd ./client && npm install && npm run dev",
     "dev": "npm run s_dev && npm run @c_dev"
   },
