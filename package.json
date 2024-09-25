@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "s_dev": "cd ./server && run dev",
+    "c_dev": "cd ./client && run dev",
+    "dev": "run @s_dev && @c_devt"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
