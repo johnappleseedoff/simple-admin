@@ -9,7 +9,7 @@ function App() {
   const [array, setArray] = useState([]);
 
   const fetchTest = async () => {
-      const response = await axios.get("http://localhost:3000/test");
+      const response = await axios.get("http://localhost:3000/");
       setArray(response.data.r);
       console.log(response.data.r);
   };
